@@ -10,7 +10,9 @@ const Items = () => {
   useEffect(() => {
     const fetchItems = async () => {
       try {
-        const response = await axios.get('https://e-backend-1jgc.onrender.com/api/items');
+        const response = await axios.get('https://e-backend-1jgc.onrender.com/api/items', {
+  withCredentials: true, // ✅ Include cookies in request
+});
         setItems(response.data);
       } catch (error) {
         console.error('Error fetching items:', error);
