@@ -15,13 +15,13 @@ const Trades = () => {
     const fetchItems = async () => {
       try {
         // Fetch the selected item (other user's item)
-        const selectedItemResponse = await axios.get(`http://localhost:3000/api/items/${id}`, {
+        const selectedItemResponse = await axios.get(`https://e-backend-1jgc.onrender.com/api/items/${id}`, {
           withCredentials: true, // Include cookies
         });
         setSelectedItem(selectedItemResponse.data);
 
         // Fetch user's own items
-        const myItemsResponse = await axios.get("http://localhost:3000/api/items/my-items", {
+        const myItemsResponse = await axios.get("https://e-backend-1jgc.onrender.com/api/items/my-items", {
           withCredentials: true, // Include cookies
         });
 
@@ -48,7 +48,7 @@ const Trades = () => {
 
     try {
       await axios.post(
-        "http://localhost:3000/api/trades/propose",
+        "https://e-backend-1jgc.onrender.com/api/trades/propose",
         {
           proposedTo: selectedItem.createdBy._id,
           proposedItem: id,
@@ -78,7 +78,7 @@ const Trades = () => {
             {selectedItem && (
               <div className="item-details">
                 <img
-                  src={`http://localhost:3000${selectedItem.imageUrl}`}
+                  src={`https://e-backend-1jgc.onrender.com${selectedItem.imageUrl}`}
                   alt={selectedItem.title}
                   className="item-image"
                 />
@@ -98,7 +98,7 @@ const Trades = () => {
             {myItems.length > 0 ? (
               <div className="item-details">
                 <img
-                  src={`http://localhost:3000${myItems[selectedMyItemIndex].imageUrl}`}
+                  src={`https://e-backend-1jgc.onrender.com${myItems[selectedMyItemIndex].imageUrl}`}
                   alt={myItems[selectedMyItemIndex].title}
                   className="item-image"
                 />

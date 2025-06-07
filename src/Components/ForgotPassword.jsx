@@ -18,7 +18,7 @@ const ForgotPassword = () => {
         }
     
         try {
-            const response = await axios.post('http://localhost:3000/auth/forgot-password', { email });
+            const response = await axios.post('https://e-backend-1jgc.onrender.com/auth/forgot-password', { email });
     
             if (response.data.status) {
                 setSuccessMessage("Check your email for the reset password link.");

@@ -10,7 +10,7 @@ const Home = () => {
   const handleLogout = () => {
     console.log("Sending logout request...");
     axios
-      .get("http://localhost:3000/auth/logout", { withCredentials: true })
+      .get("https://e-backend-1jgc.onrender.com/auth/logout", { withCredentials: true })
       .then((res) => {
         console.log("Logout response:", res.data);
         if (res.data?.status) {

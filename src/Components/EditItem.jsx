@@ -18,7 +18,7 @@ const EditItem = () => {
   useEffect(() => {
     const fetchItemDetails = async () => {
       try {
-        const response = await axios.get(`http://localhost:3000/api/items/${id}`);
+        const response = await axios.get(`https://e-backend-1jgc.onrender.com/api/items/${id}`);
         setFormData({
           title: response.data.title,
           size: response.data.size,
@@ -54,7 +54,7 @@ const EditItem = () => {
     }
 
     try {
-      await axios.put(`http://localhost:3000/api/items/${id}`, form);
+      await axios.put(`https://e-backend-1jgc.onrender.com/api/items/${id}`, form);
       navigate('/my-items');
     } catch (error) {
       console.error('Error updating item:', error);

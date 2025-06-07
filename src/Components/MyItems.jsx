@@ -12,7 +12,7 @@ const MyItems = () => {
     useEffect(() => {
         const fetchMyItems = async () => {
             try {
-                const response = await axios.get("http://localhost:3000/api/items/my-items", { withCredentials: true });
+                const response = await axios.get("https://e-backend-1jgc.onrender.com/api/items/my-items", { withCredentials: true });
 
                 if (Array.isArray(response.data)) {
                     setItems(response.data);
@@ -36,7 +36,7 @@ const MyItems = () => {
         if (!confirmDelete) return;
 
         try {
-            await axios.delete(`http://localhost:3000/api/items/${id}`, { withCredentials: true });
+            await axios.delete(`https://e-backend-1jgc.onrender.com/api/items/${id}`, { withCredentials: true });
             setItems(items.filter((item) => item._id !== id));
         } catch (error) {
             console.error('Error deleting item:', error);
@@ -66,7 +66,7 @@ const MyItems = () => {
                         {items.map(item => (
                             <div key={item._id} className="item-card">
                                 <img
-                                    src={`http://localhost:3000${item.imageUrl}`}
+                                    src={`https://e-backend-1jgc.onrender.com${item.imageUrl}`}
                                     alt={item.title}
                                     className="item-image"
                                     onError={(e) => (e.target.style.display = "none")} // Hide broken images

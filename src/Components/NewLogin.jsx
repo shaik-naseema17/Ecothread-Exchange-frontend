@@ -16,7 +16,7 @@ const NewLogin = () => {
             return;
         }
         try {
-            const response = await axios.post('http://localhost:3000/auth/login', { email, password });
+            const response = await axios.post('https://e-backend-1jgc.onrender.com/auth/login', { email, password });
             if (response.data.status) {
                 navigate(response.data.role === 'admin' ? "/admin" : "/items");
             } else {

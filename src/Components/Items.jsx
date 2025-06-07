@@ -10,7 +10,7 @@ const Items = () => {
   useEffect(() => {
     const fetchItems = async () => {
       try {
-        const response = await axios.get('http://localhost:3000/api/items');
+        const response = await axios.get('https://e-backend-1jgc.onrender.com/api/items');
         setItems(response.data);
       } catch (error) {
         console.error('Error fetching items:', error);
@@ -27,7 +27,7 @@ const Items = () => {
         <div className="items-list">
           {items.map((item) => (
             <div key={item._id} className="item-box">
-              <img src={`http://localhost:3000${item.imageUrl}`} alt={item.title} className="item-image" />
+              <img src={`https://e-backend-1jgc.onrender.com${item.imageUrl}`} alt={item.title} className="item-image" />
               <div className="item-details">
                 <h3>{item.title}</h3>
                 <p>Size: {item.size}</p>

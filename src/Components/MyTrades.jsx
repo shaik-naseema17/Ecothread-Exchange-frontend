@@ -12,7 +12,7 @@ const MyTrades = () => {
   useEffect(() => {
     const fetchUser = async () => {
       try {
-        const response = await axios.get("http://localhost:3000/auth/me", {
+        const response = await axios.get("https://e-backend-1jgc.onrender.com/auth/me", {
           withCredentials: true,
         });
         setCurrentUserId(response.data.userId);
@@ -23,7 +23,7 @@ const MyTrades = () => {
 
     const fetchTrades = async () => {
       try {
-        const response = await axios.get("http://localhost:3000/api/trades/my-trades", {
+        const response = await axios.get("https://e-backend-1jgc.onrender.com/api/trades/my-trades", {
           withCredentials: true,
         });
         setTrades(response.data);
@@ -45,7 +45,7 @@ const MyTrades = () => {
   const handleAcceptTrade = async (tradeId) => {
     try {
       const response = await axios.put(
-        `http://localhost:3000/api/trades/${tradeId}/accept`,
+        `https://e-backend-1jgc.onrender.com/api/trades/${tradeId}/accept`,
         {},
         { withCredentials: true }
       );
@@ -65,7 +65,7 @@ const MyTrades = () => {
   const handleRejectTrade = async (tradeId) => {
     try {
       const response = await axios.put(
-        `http://localhost:3000/api/trades/${tradeId}/reject`,
+        `https://e-backend-1jgc.onrender.com/api/trades/${tradeId}/reject`,
         {},
         { withCredentials: true }
       );
