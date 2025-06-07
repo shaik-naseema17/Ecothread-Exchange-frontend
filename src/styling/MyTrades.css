@@ -1,0 +1,116 @@
+/* Container for the entire component */
+.my-trades-container {
+    font-family: 'Arial', sans-serif;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Heading */
+  .my-trades-container h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Individual trade card */
+  .trade-card {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .trade-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Trade ID */
+  .trade-card h3 {
+    font-size: 1.5rem;
+    color: #555;
+    margin-bottom: 10px;
+  }
+  
+  /* Trade details */
+  .trade-card p {
+    font-size: 1rem;
+    color: #666;
+    margin: 5px 0;
+  }
+  
+  /* Highlight for usernames and item titles */
+  .trade-card .highlight {
+    color: #007bff;
+    font-weight: bold;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .my-trades-container {
+      padding: 10px;
+    }
+  
+    .trade-card {
+      padding: 15px;
+    }
+  
+    .trade-card h3 {
+      font-size: 1.3rem;
+    }
+  
+    .trade-card p {
+      font-size: 0.9rem;
+    }
+  }
+  .trade-actions {
+    margin-top: 10px;
+  }
+  
+  .accept-button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  
+  .accept-button:hover {
+    background-color: #218838;
+  }
+  
+  .reject-button {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .reject-button:hover {
+    background-color: #c82333;
+  }
+ 
+/* Unique styling for trade description */
+.trade-description {
+  font-size: 1.3rem; /* Make it bigger */
+  font-weight: bold; /* Make it bold */
+  color: #ff5733; /* Unique color (orange-red) */
+  text-align: center; /* Center align */
+  margin-top: 10px;
+  background-color: #fff3e0; /* Light background to highlight */
+  padding: 10px;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: inline-block; /* Avoid full-width background */
+}

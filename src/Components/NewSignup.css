@@ -1,0 +1,62 @@
+.newsignup-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw; /* Full width */
+    background-color: #f4f4f4;
+    margin: 0; /* Remove any default margin */
+    padding: 0; /* Remove any default padding */
+  }
+  
+  .newsignup-form {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Full width */
+    max-width: 400px; /* Control max width for better UI */
+    text-align: center;
+  }
+  
+  .newsignup-form h2 {
+    margin-bottom: 1rem;
+    color: #2b2a35;
+  }
+  
+  .newsignup-form label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    text-align: left;
+  }
+  
+  .newsignup-form input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .newsignup-form button {
+    margin-top: 15px;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #2b2a35;
+    color: white;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .newsignup-form button:hover {
+    background-color: #444;
+  }
+  
+  .newsignup-error {
+    color: red;
+    margin-bottom: 10px;
+  }
+  

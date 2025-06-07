@@ -1,0 +1,181 @@
+/* Home.css */
+
+/* General reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: fangsong;
+  background-color: white;
+
+  background-size: cover; /* Make the background cover the entire viewport */
+  color: #fff;
+  padding-top: 70px; /* Match the height of the navbar */
+}
+
+/* Full-width navbar */
+header {
+  background-color: #0a8df1; /* Dark teal */
+  padding: 2px 3px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  width: 100%;
+  position: fixed; /* Fixed navbar at the top */
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  margin-right: 5px;
+}
+
+header h1 {
+  font-size: 24px;
+  font-weight: bold;
+  color:white; /* Light teal for branding */
+  margin-right: auto;
+  margin-bottom: 15px;
+}
+
+nav {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #00e6e6; /* Light teal background on hover */
+  color: #004f4f; /* Dark teal text on hover */
+}
+
+/* Main container for page content */
+.home-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 70px); /* Full height minus navbar */
+  padding: 20px;
+  margin-top: 70px; /* To avoid content being hidden under the fixed navbar */
+}
+
+/* Form styles */
+form {
+  background-color: #fff; /* White form background */
+  color: #000; /* Black text for form */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  width: 400px;
+  max-width: 100%;
+}
+
+form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #004f4f; /* Dark teal heading */
+}
+
+form label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+form input,
+form select,
+form button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+form button {
+  background-color: #004f4f; /* Dark teal button */
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #00e6e6; /* Light teal hover */
+  color: #004f4f;
+}
+.exchange-image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 20px auto;
+  border-radius: 15px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.exchange-image:hover {
+  transform: scale(1.05);
+}
+/* New CSS selectors for the layout */
+.home-welcome-section {
+  display: flex;
+  align-items: center;
+  gap: 40px; /* Space between image and text */
+  max-width: 1200px; /* Adjust as needed */
+  margin: 0 auto; /* Center the content */
+  padding: 20px;
+}
+
+.home-welcome-section img {
+  flex: 1; /* Image takes up 1 part of the space */
+  max-width: 50%; /* Limit image width */
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.home-welcome-section img:hover {
+  transform: scale(1.05);
+}
+
+.home-welcome-section .welcome-text {
+  flex: 1; /* Text takes up 1 part of the space */
+  max-width: 50%; /* Limit text width */
+}
+
+.home-welcome-section h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #004f4f; /* Dark teal heading */
+}
+
+.home-welcome-section p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333; /* Dark text for readability */
+  margin-bottom: 20px;
+}
+.welcome-text ol {
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+.welcome-text li {
+  margin-bottom: 10px;
+  line-height: 1.6;
+}

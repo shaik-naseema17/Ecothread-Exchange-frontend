@@ -1,0 +1,121 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: blue; /* White background */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Full height viewport */
+  }
+  
+  /* Container styling */
+  .container {
+    width: 100%;
+    max-width: 400px;
+    margin: 20px;
+    background-color: #f9f9f9; /* Slight off-white for form */
+    border: 1px solid #ddd; /* Subtle border */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+    padding: 20px 30px;
+    box-sizing: border-box;
+  }
+  
+  /* Form styling */
+  .form {
+    width: 100%;
+  }
+  
+  .form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333; /* Dark gray text */
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  /* Labels */
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #555; /* Medium gray for labels */
+  }
+  
+  /* Input fields */
+  input[type="email"],
+  input[type="text"],
+  input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 14px;
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  input:focus {
+    outline: none;
+    border-color: #007bff; /* Highlight with blue when focused */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+  
+  /* Button */
+  button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff; /* Primary blue */
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+  }
+  
+  /* Links */
+  a {
+    text-decoration: none;
+    color: #007bff;
+    font-size: 14px;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Forgot password and signup links */
+  .form p {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 10px;
+    color: #555; /* Medium gray */
+  }
+  
+  .form a {
+    font-weight: bold;
+  }
+  
+  /* Responsive design for smaller screens */
+  @media (max-width: 480px) {
+    .container {
+      padding: 15px;
+    }
+  
+    .form h2 {
+      font-size: 20px;
+    }
+  
+    button[type="submit"] {
+      font-size: 14px;
+    }
+  }
+  
