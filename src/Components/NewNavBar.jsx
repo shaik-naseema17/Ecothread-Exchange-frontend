@@ -1,4 +1,4 @@
-import './NewNavbar.css';
+import './NewNavBar.css';
 import { Link } from 'react-router-dom';
 function NewNavbar() {
   return (
