@@ -9,7 +9,7 @@ function NewAbout() {
       
       <div className="newabout-section">
         <div className="newabout-image">
-        <img src="/images/reuse.png" alt="Bag" />
+        <img src="https://lh4.googleusercontent.com/0WikEQxcCzTTyUdk4d6863mEgRGqPi6PrgVfF0aJW3Pv711LqZ06aoTjb_-bmu1bI7uYD6l0eDz7D5PgYHKJ6QB1wnxVDUNLRCygJE_NdCGottHkTzXxNG7HivJjxRBvnfTAJfTIyguuvYvNFK_tCmA" alt="Bag" />
 
         </div>
         <div className="newabout-text">
