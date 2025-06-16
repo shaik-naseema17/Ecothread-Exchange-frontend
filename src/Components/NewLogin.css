@@ -59,4 +59,14 @@
     color: red;
     margin-bottom: 10px;
   }
-  
+  .guest-login-button {
+    margin-top: 10px;
+    background-color: #444;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+.guest-login-button:hover {
+    background-color: #333;
+}
