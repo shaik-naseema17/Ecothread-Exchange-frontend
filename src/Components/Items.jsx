@@ -11,8 +11,8 @@ const Items = () => {
     const fetchItems = async () => {
       try {
         const response = await axios.get('https://e-backend-1jgc.onrender.com/api/items', {
-  withCredentials: true, // ✅ Include cookies in request
-});
+          withCredentials: true, // ✅ Include cookies in request
+        });
         setItems(response.data);
       } catch (error) {
         console.error('Error fetching items:', error);
@@ -29,7 +29,12 @@ const Items = () => {
         <div className="items-list">
           {items.map((item) => (
             <div key={item._id} className="item-box">
-              <img src={`https://e-backend-1jgc.onrender.com${item.imageUrl}`} alt={item.title} className="item-image" />
+              <img
+                src={item.imageUrl} // ✅ Cloudinary URL used directly
+                alt={item.title}
+                className="item-image"
+                onError={(e) => (e.target.style.display = 'none')} // Optional fallback
+              />
               <div className="item-details">
                 <h3>{item.title}</h3>
                 <p>Size: {item.size}</p>
@@ -38,7 +43,6 @@ const Items = () => {
                 <p><strong>Created By:</strong> {item.createdBy?.username || "Unknown"}</p>
                 <p><strong>Email:</strong> {item.createdBy?.email || "Unknown"}</p>
                 
-                {/* Only "View Details" button remains */}
                 <Link to={`/item/${item._id}`}>
                   <button className="view-item-button">View Details</button>
                 </Link>

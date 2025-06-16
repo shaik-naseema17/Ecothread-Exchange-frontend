@@ -78,10 +78,11 @@ const Trades = () => {
             {selectedItem && (
               <div className="item-details">
                 <img
-                  src={`https://e-backend-1jgc.onrender.com${selectedItem.imageUrl}`}
-                  alt={selectedItem.title}
-                  className="item-image"
-                />
+  src={selectedItem.imageUrl}
+  alt={selectedItem.title}
+  className="item-image"
+/>
+
                 <h3>{selectedItem.title}</h3>
                 <p>Size: {selectedItem.size}</p>
                 <p>Condition: {selectedItem.condition}</p>
@@ -98,10 +99,11 @@ const Trades = () => {
             {myItems.length > 0 ? (
               <div className="item-details">
                 <img
-                  src={`https://e-backend-1jgc.onrender.com${myItems[selectedMyItemIndex].imageUrl}`}
-                  alt={myItems[selectedMyItemIndex].title}
-                  className="item-image"
-                />
+  src={myItems[selectedMyItemIndex].imageUrl}
+  alt={myItems[selectedMyItemIndex].title}
+  className="item-image"
+/>
+
                 <h3>{myItems[selectedMyItemIndex].title}</h3>
                 <p>Size: {myItems[selectedMyItemIndex].size}</p>
                 <p>Condition: {myItems[selectedMyItemIndex].condition}</p>

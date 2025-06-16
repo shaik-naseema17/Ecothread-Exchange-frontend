@@ -35,7 +35,8 @@ const ItemDetails = () => {
     <>
       <Navbar />
       <div className="item-details-container">
-        <img src={`https://e-backend-1jgc.onrender.com${item.imageUrl}`} alt={item.title} className="item-image-large" />
+     <img src={item.imageUrl} alt={item.title} className="item-image-large" />
+
         <div className="item-details-content">
           <h2>{item.title}</h2>
           <p>Size: {item.size}</p>

@@ -65,12 +65,13 @@ const MyItems = () => {
                     <div className="items-grid">
                         {items.map(item => (
                             <div key={item._id} className="item-card">
-                                <img
-                                    src={`https://e-backend-1jgc.onrender.com${item.imageUrl}`}
-                                    alt={item.title}
-                                    className="item-image"
-                                    onError={(e) => (e.target.style.display = "none")} // Hide broken images
-                                />
+                               <img
+  src={item.imageUrl}
+  alt={item.title}
+  className="item-image"
+  onError={(e) => (e.target.style.display = "none")}
+/>
+
                                 <div className="item-details">
                                     <h3>{item.title}</h3>
                                     <p><strong>Size:</strong> {item.size}</p>
