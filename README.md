@@ -23,31 +23,31 @@ Technology Stack Used:
 •	Database: MongoDB
 •	Tools/Libraries: Axios, React Router, Mongoose
 About page :
- 
+<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/899939cf-7907-458d-8b6a-32208f18b9aa" />
+
 Sign up page :
- 
+<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/102f7fdf-9dc0-4dda-b86f-a6e0a750932d" />
 
+Login page:
+<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/f47cf05a-1a4d-4b9a-977b-c0ac68db8001" />
 
-Login page
- 
+Items page:
+<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/e0bd0b3f-56ae-485c-bc6b-138da48853c0" />
 
-
-Items page
- 
-
-My-Items page 
-
+My-Items page :
+<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/5305df27-76f6-47bf-8fe9-9867fa7a0806" />
 
 Propose a trade:
- 
-
-
-
-
+<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/3d3d4f5d-6a24-4e06-bd89-04531814a121" />
 
 Trade Proposal:
+<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/5305df27-76f6-47bf-8fe9-9867fa7a0806" />
  
 View Item Page:
+<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/1a82a263-86e1-41b2-b914-531821a2dd60" />
+
  
 Conclusion:
 EcoThread Exchange is a user-centric platform designed to reduce fashion waste and promote sustainability. By enabling users to exchange not just clothes but also shoes, bags, watches, and accessories, the project fosters a culture of reuse and mindful consumption. Built on the MERN stack, it delivers a modern and scalable solution for eco-conscious communities.
+
+
