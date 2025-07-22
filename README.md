@@ -1,9 +1,15 @@
 EcoThread Exchange – A Sustainable Fashion for a Greener Tomorrow
 The name EcoThread Exchange reflects the idea of sustainability (“Eco”) and the connection (“Thread”) between people who wish to reuse and exchange everyday items like clothes, watches, shoes, books, and bags. While "thread" traditionally relates to fabric, here it symbolizes the thread of conscious living and community-driven sustainability that runs through every exchange on the platform.
+
+
 Problem Statement:
 The fast fashion industry and consumer habits contribute significantly to environmental pollution through overproduction and frequent disposal of fashion-related items such as clothes, shoes, bags, and accessories. Many usable items are discarded even when they hold value for others.
+
+
 Proposed Solution:
 EcoThread Exchange is a web-based platform that enables users to exchange fashion-related items—including clothing, shoes, watches, bags, and accessories—with others in a sustainable way. The application encourages the reuse of these items by allowing users to list their possessions and request trades directly with others.
+
+
 Workflow Overview:
 1.	User Registration & Login:
 o	Users sign up and securely log into the platform.
@@ -17,11 +23,18 @@ o	Users send trade requests through propose trade button.
 o	Trade status is tracked as pending, accepted, or rejected.
 5.	Trade Completion:
 o	Once a trade is accepted, the exchanged items are removed from the database to ensure proper item availability.
+
 Technology Stack Used:
+
 •	Frontend: React.js
+
 •	Backend: Node.js, Express.js
+
 •	Database: MongoDB
+
 •	Tools/Libraries: Axios, React Router, Mongoose
+
+
 About page :
 <img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/899939cf-7907-458d-8b6a-32208f18b9aa" />
 
